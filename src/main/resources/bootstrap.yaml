@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    kubernetes:
+      reload:
+        enabled: true
+        monitoring-config-maps: true
+        monitoring-secrets: true
+      config:
+        enabled: true
+      secrets:
+        enabled: true
+      enabled: true

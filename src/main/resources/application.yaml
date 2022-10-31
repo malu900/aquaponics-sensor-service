@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: sensor-service
+#  cloud:
+#    kubernetes:
+#      enabled: false
+#      reload:
+#       monitoring-config-maps: true
+#       monitoring-secrets: true
+#      config:
+#        enabled: true
+#      secrets:
+#        enabled: true
+  datasource:
+    url: jdbc:h2:mem:sensordata
+    username: team4
+    password: password
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+server:
+  port: 8081
+logging:
+  level:
+    com.aquaponics.sensor-service: DEBUG
